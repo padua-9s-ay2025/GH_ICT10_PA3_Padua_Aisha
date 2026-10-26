@@ -1,0 +1,97 @@
+/* Reset basic layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0d1b2a; /* Deep Navy Background */
+    color: #e0e1dd; /* Soft off-white text */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container styling for the form */
+form {
+    background-color: #1b263b; /* Dark Navy Card */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid #415a77;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Text Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    background-color: #0d1b2a;
+    border: 1px solid #415a77;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #778da9;
+    box-shadow: 0 0 0 3px rgba(119, 141, 169, 0.3);
+}
+
+input[type="text"]::placeholder {
+    color: #778da9;
+}
+
+/* Search Button */
+input[type="button"] {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #415a77;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #778da9;
+}
+
+input[type="button"]:active {
+    transform: scale(0.98);
+}
+
+/* Output Display Area */
+#output {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+    background-color: #1b263b;
+    border-radius: 8px;
+    border: 1px dashed #415a77;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e0e1dd;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#output:empty {
+    display: none; /* Hides output box until there is content */
+}
